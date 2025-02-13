@@ -513,7 +513,7 @@ xyz = xyz.translate(str.maketrans(xyz, xyz))
 xyz = xyz[::-1].translate(str.maketrans('', '', xyz))
 
 ```
-Removing them will even get us a shorted code : 
+Removing them will even get us a shortened code : 
 
 ```python
 print("se7r se7r se7r")
