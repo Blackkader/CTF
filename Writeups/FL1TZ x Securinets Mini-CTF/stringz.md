@@ -18,7 +18,7 @@
 
 The first we usually use while reverse engineering is the [file command](https://www.geeksforgeeks.org/file-command-in-linux-with-examples/)
 
-![](../.private_images/2025-02-11-22-12-18-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-12-18-image.png)
 
 We can see that it's an executable which is built for 64-bit and compiled for the **x86-64 (AMD64) architecture** and for **Linux kernel version 4.4.0** or newer.
 
@@ -28,9 +28,9 @@ Running the file won't give us anything useful :/
 
 So let's try  to use this website [Dogbolt](https://dogbolt.org/) which was provided in the description, we get this result :
 
-<img src="../.private_images/2025-02-11-21-43-24-image.png" title="" alt="" data-align="center">Let's choose any one of those and try to search for the flag format _FL1TZ_
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-21-43-24-image.png" title="" alt="" data-align="center">Let's choose any one of those and try to search for the flag format _FL1TZ_
 
-<img title="" src="../.private_images/2025-02-11-21-44-38-image.png" alt="" width="278" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-21-44-38-image.png" alt="" width="278" data-align="center">
 
 And we find our flag : 
 
@@ -48,7 +48,7 @@ A beginner **Linux** user will know what we exactly want here , which is the [st
 
 > If you had typed the name of the binary twice (with a space in between), you would have gotten the flag xD
 
-<img title="" src="../.private_images/2025-02-11-21-50-26-image.png" alt="" width="363" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-21-50-26-image.png" alt="" width="363" data-align="center">
 
 **MUST KNOW** : file and strings are the number one step we always do in each challenge , they are information gatherers and our bestfriends !!
 

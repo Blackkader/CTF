@@ -32,7 +32,7 @@ There are maaany tools , and hexeditors (even online)
 
 For me I prefer [xxd](https://www.tutorialspoint.com/unix_commands/xxd.htm) , so let's use that  and scroll a bit :
 
-![](../.private_images/2025-02-11-22-09-00-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-09-00-image.png)
 
 And bingo !
 

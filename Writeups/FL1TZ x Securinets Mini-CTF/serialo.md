@@ -16,7 +16,7 @@
 
 Ok we have a .tar file **(an archive)** , let's extract it using the tar command
 
-![](../.private_images/2025-02-12-10-10-29-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-10-10-29-image.png)
 
 Oh the challenge is corrupted , it's not our problem , it's the author's fault 
 
@@ -24,11 +24,11 @@ IS ITTTT ???
 
 Didn't i tell you that we have two bestfriends ??? one of them is the key for revealing the secret behind this file and that one bestfriend is **file**
 
-![](../.private_images/2025-02-12-10-12-44-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-10-12-44-image.png)
 
 ohh it's an executable , the author is just playing games with us , lets add the execution permission and try to run it 
 
-<img title="" src="../.private_images/2025-02-12-10-13-48-image.png" alt="" width="489" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-10-13-48-image.png" alt="" width="489" data-align="center">
 
 Hmmm , a name and a serial , in the **description** it is asking us to find the name for this serial **566C01447A4B47144473486F204E034F70012343754F505C435D**
 
@@ -147,7 +147,7 @@ And when you get to the ida view , u look for the xor and set a breakpoint there
 
 Time to run our program and inspect the value of ecx ( which is our key[i-1])
 
-<img src="../.private_images/2025-02-12-10-54-46-image.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-10-54-46-image.png" title="" alt="" data-align="center">
 
 boom ! **ecx=0x10=16**
 

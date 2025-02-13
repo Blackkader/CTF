@@ -28,7 +28,7 @@ Also , found someone suggesting [CyberChef]([CyberChef](https://gchq.github.io/C
 
 Let's go ahead and look for oid in cyberchef :
 
-![](../.private_images/2025-02-12-11-41-28-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-41-28-image.png)
 
 So oid can be converted to hex  :O , we use that and we find out the hex values 
 
@@ -36,7 +36,7 @@ So oid can be converted to hex  :O , we use that and we find out the hex values
 
 But what you guys don't know  is that **CyberChef** has a powerful operation called **Magic** it can identify the conversions done to your input , so we add oid to hex and magic and see what we get 
 
-![](../.private_images/2025-02-12-11-46-59-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-46-59-image.png)
 
 oid > hex > base 64 > base 32 , that's tiring :c 
 
@@ -48,11 +48,11 @@ we grap our output from cyberchef which is this :
 
 But what is this thing ? a quick research will tell us that this is a language called [brainfuck](https://esolangs.org/wiki/Brainfuck) , this language messes around with pointers 
 
-It's basically a stack like this :<img src="../.private_images/2025-02-12-11-54-42-image.png" title="" alt="" data-align="center">
+It's basically a stack like this :<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-54-42-image.png" title="" alt="" data-align="center">
 
 and the commands are those :
 
-<img title="" src="../.private_images/2025-02-12-11-55-15-image.png" alt="" width="581" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-55-15-image.png" alt="" width="581" data-align="center">
 
 Let's search up some brainfuck interpreters online , maybe running the output will get us something
 
@@ -84,17 +84,17 @@ SO we get the input by "," then we move the third cell using  ">>" and we increm
 
 and we add "+" 6 times , then we go back to the second cell and decrement 1 using "-" so it becomes 10-1=9 , and so on till the third cell becomes 0 and the second cell becomes what ?? becomes 6*10 ! we can draw a bit on our stack ( let's refer to the input by x )
 
-<img title="" src="../.private_images/2025-02-12-12-15-02-image.png" alt="" data-align="center" width="316">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-15-02-image.png" alt="" data-align="center" width="316">
 
 after the loop ends we go back to the first cell and enter another loop 
 
 "[-<->]" so we start decrementing from the cell that has 60 and go back to the input and decrement from it as well ! then we return to the second cell that now has 59 ..... we continue on until we have this :
 
-<img title="" src="../.private_images/2025-02-12-12-21-41-image.png" alt="" data-align="center" width="294">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-21-41-image.png" alt="" data-align="center" width="294">
 
 after this loop we return to the input cell and we decrement "-" 10 times from it :
 
-<img title="" src="../.private_images/2025-02-12-12-22-52-image.png" alt="" data-align="center" width="320">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-22-52-image.png" alt="" data-align="center" width="320">
 
 until we reach this [><] and what is that !!! it literally moves to the second cell then to the first , and the only way to leave the loop is by having the value in the cell set to 0 , and boom our equation : **x-70=0 >>>>> x=70** and guess what else is 70 ? its F
 
@@ -102,7 +102,7 @@ our first character of the flag , we are in the correct path
 
 **To summarize:** 
 
-<img title="" src="../.private_images/2025-02-12-12-29-10-image.png" alt="" width="596" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-29-10-image.png" alt="" width="596" data-align="center">
 
 Now you can crack this using a pen and paper or a python script xD , here is my python script (includes the conversions !):
 

@@ -16,19 +16,19 @@
 
 Let's extract the zip using the **unzip command** :
 
-<img src="../.private_images/2025-02-13-10-17-22-image.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-17-22-image.png" title="" alt="" data-align="center">
 
 Oh a version for **Linux** and another for **Windows** 
 
 I'll be using the linux one ig , let's start with our file command :
 
-![](../.private_images/2025-02-13-10-18-50-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-18-50-image.png)
 
 Let's launch our executable then : 
 
-<img title="" src="../.private_images/2025-02-13-10-22-32-image.png" alt="" width="547" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-22-32-image.png" alt="" width="547" data-align="center">
 
-<img title="" src="../.private_images/2025-02-13-10-22-53-image.png" alt="" width="551" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-22-53-image.png" alt="" width="551" data-align="center">
 
 Oh what is that xDD , we got **GODOT game engine** ? , well it's self explanatory , this is a game and it was made with the game engine [**GODOT**](https://godotengine.org/)
 
@@ -36,11 +36,11 @@ What we can first observe are flags scattered around , and i guess the flag char
 
 I can't jump enough come on !  , also when playing on full screen i could see more of the platform 
 
-<img src="../.private_images/2025-02-13-10-26-06-image.png" title="" alt="" width="627">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-26-06-image.png" title="" alt="" width="627">
 
 Let's try reaching the flag on right :
 
-<img src="../.private_images/2025-02-13-10-26-51-image.png" title="" alt="" width="626">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-26-51-image.png" title="" alt="" width="626">
 
 Oh ! the characters moved around the screen , we can assume that the author wants us to jump to that suspicious flag covered with emojis xD as he stated in the description **" can you jump long enough ????? the flag is shiny ! "**
 
@@ -48,19 +48,19 @@ Time to reverse engineer then .. , How can we get the files used to create a god
 
 Which helps us decompile the game, let's  give it a try : 
 
-<img title="" src="../.private_images/2025-02-13-10-35-11-image.png" alt="" width="521" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-35-11-image.png" alt="" width="521" data-align="center">
 
 Let's try recover project ? We choose our file and the extract location and we successfully get our project back : 
 
-![](../.private_images/2025-02-13-10-37-07-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-37-07-image.png)
 
 Now how can we open the project files  ??? as we can see the _Recovery Report_ , it says **Use Godot editor version 4.2.1 to edit this project** , time to install that and import our project :
 
-<img title="" src="../.private_images/2025-02-13-10-41-13-image.png" alt="" width="536" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-41-13-image.png" alt="" width="536" data-align="center">
 
 And there we go ,  we got our project back : 
 
-<img title="" src="../.private_images/2025-02-13-10-42-02-image.png" alt="" width="599" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-42-02-image.png" alt="" width="599" data-align="center">
 
 We are interested in reverse engineering right ? While analyzing the scripts out there we find out that the most interesting script among them is **arena.tscn**
 
@@ -159,7 +159,7 @@ func _ready():
 
 We need to confirm that , and that's by checking the scene section in the upper left corner : 
 
-![](../.private_images/2025-02-13-10-52-49-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-52-49-image.png)
 
 Yes ! they are in order 
 
@@ -167,7 +167,7 @@ Then we can totally say  that we have to touch the 5th flag (position of 0 in th
 
 Let's select the 5th flag while we open the arena in 2d , so it shows us which object we are currently selecting : 
 
-![](../.private_images/2025-02-13-10-56-07-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-56-07-image.png)
 
 It's not there ? maybe it is , but it's  TOO FARR ! , we can see the that the flag's position is actually **(-245,500000)** !!!
 
@@ -175,11 +175,11 @@ Let's bring it closer to us ! We change the **Y**'s value to something smaller l
 
 Then the flag will appear in the screen and we grab it and put it closer to us , so when we spawn we get it easily like this :
 
-<img src="../.private_images/2025-02-13-10-59-45-image.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-10-59-45-image.png" title="" alt="" data-align="center">
 
 Time to launch our modified game now ! and see what happens :
 
-![](../.private_images/2025-02-13-11-00-55-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-13-11-00-55-image.png)
 
 Damn , we can see characters are being printed in the log down there : 
 

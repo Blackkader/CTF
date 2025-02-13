@@ -34,7 +34,7 @@ It's time to put him to rest again
 
 When we connect to the instance , we can see we have to input some key 
 
-<img src="../.private_images/2025-02-12-18-42-59-image.png" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-18-42-59-image.png" title="" alt="" data-align="center">
 
 nothing happens, let's inspect our maze2.c file : (_I'll only put the main function_)
 
