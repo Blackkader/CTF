@@ -1,6 +1,6 @@
 # CTFS
 
-Welcome , this **comprehensive repository** which focuses on my _CTF-related work_ with the two main **sections** :
+Welcome to this **comprehensive repository** which focuses on my _CTF-related work_ with the two main **sections** :
 
 1. **Challenges** : Contains the challenges i've created for CTFs.
   
