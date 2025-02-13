@@ -7,6 +7,7 @@
 > Hello players, this is serious you have to hack !! today you are gonna learn a new command !!! the hint is given in the name of the BINARY. First of all ? what is a binary ? what is an executable ?�?[tutorial](https://www.youtube.com/watch?v=WnqOhgI_8wA)�?there is magic called DECOMPILATION ! you can do it with many tools like GHIDRA or IDA also this website works well�?[Dogbolt](https://dogbolt.org/)
 > 
 > GOOD LUCK !! (you will need it , this challenge is very hard !!!)
+>
 > 𝐀𝐮𝐭𝐡𝐨𝐫 : 𝐁𝐥𝐚𝐜𝐤𝐤𝐚𝐝𝐞𝐫
 
 ### **Files Given :** _a binary 'stringz'_
