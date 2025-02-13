@@ -492,7 +492,7 @@ print("magic is done .")
 
 Those lines are :
 
-```python
+
 ```python
 import random
 
@@ -503,7 +503,7 @@ def random_choice(qwerty):
     return random.randint(0, qwerty - 1)
 
 random_seed(165)
-```
+
 
 xyz = xyz if len(xyz) > 0 else ""
 xyz = "".join([xyz[h] for h in range(len(xyz))])
