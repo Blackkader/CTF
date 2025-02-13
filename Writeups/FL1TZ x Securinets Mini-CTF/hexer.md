@@ -32,7 +32,7 @@ There are maaany tools , and hexeditors (even online)
 
 For me I prefer [xxd](https://www.tutorialspoint.com/unix_commands/xxd.htm) , so let's use that  and scroll a bit :
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-09-00-image.png)
+![](https://private-user-images.githubusercontent.com/144800528/413027349-55bd5a03-b295-47bb-802b-ab545be1e9b8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzM2OTAsIm5iZiI6MTczOTQ3MzM5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzQ5LTU1YmQ1YTAzLWIyOTUtNDdiYi04MDJiLWFiNTQ1YmUxZTliOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTAzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYTY1MmQyOTJlMmFkNWM1ZmI4MDY2YTRkYWNkNDhkNmJkMWUyNmJiNDhkZDQ5YTFiMzRkNTY2MTk1NDJlOGJiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pTy4Bu9fi3NoPZEM1hMD6DmT6SbPkBBtGEC0Hmj5Sd0)
 
 And bingo !
 

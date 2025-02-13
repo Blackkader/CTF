@@ -28,7 +28,7 @@ Also , found someone suggesting [CyberChef]([CyberChef](https://gchq.github.io/C
 
 Let's go ahead and look for oid in cyberchef :
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-41-28-image.png)
+![](https://private-user-images.githubusercontent.com/144800528/413027371-f107f692-38e9-4c72-abf0-bdf5ec8f8c0a.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzcxLWYxMDdmNjkyLTM4ZTktNGM3Mi1hYmYwLWJkZjVlYzhmOGMwYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xYTg2NmE4MzI1YTE1Mzk0NjhlYjU3Nzc4ZDM0ZGNhZGRhMjBmNDcxYjFlYTljZjlmMzAwYmM4NDZlOGEzOGU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.2hd6-cpf5PrYB_nMiHGic2t_PWTOZNLaBTChMITiHJQ)
 
 So oid can be converted to hex  :O , we use that and we find out the hex values 
 
@@ -36,7 +36,7 @@ So oid can be converted to hex  :O , we use that and we find out the hex values
 
 But what you guys don't know  is that **CyberChef** has a powerful operation called **Magic** it can identify the conversions done to your input , so we add oid to hex and magic and see what we get 
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-46-59-image.png)
+![](https://private-user-images.githubusercontent.com/144800528/413027325-427c3ad8-4a13-4148-81e5-ca8b18dcaca4.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzI1LTQyN2MzYWQ4LTRhMTMtNDE0OC04MWU1LWNhOGIxOGRjYWNhNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNmU2N2VmNzdlYzBlY2M2NTQ1ODRlNmZhZjg3YjBiODcwZmRjMzA3NWNhYzQ3YjEzNmEwZTFkNmEwNDBjZTVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.13i6pdOgluLu6ojmeHE12TTnO0DPye-dRUthMBqyX8E)
 
 oid > hex > base 64 > base 32 , that's tiring :c 
 
@@ -48,11 +48,11 @@ we grap our output from cyberchef which is this :
 
 But what is this thing ? a quick research will tell us that this is a language called [brainfuck](https://esolangs.org/wiki/Brainfuck) , this language messes around with pointers 
 
-It's basically a stack like this :<img src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-54-42-image.png" title="" alt="" data-align="center">
+It's basically a stack like this :<img src="https://private-user-images.githubusercontent.com/144800528/413027311-ac5e7255-e1ac-4945-8afa-9bd8329a43b2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzExLWFjNWU3MjU1LWUxYWMtNDk0NS04YWZhLTliZDgzMjlhNDNiMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNjYxMWM3MDQwYjcyNzNhZjlmZDIwZjc0MDA5MDM2OTg3ZjQ3YmFhNWY0NGNlNjYwYzNiN2QwNGM1NDM2MzI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.4lK-RooU0oIjFiehhmQzfCDrOxlNyFOCV7Cp7H8wCqc" title="" alt="" data-align="center">
 
 and the commands are those :
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-11-55-15-image.png" alt="" width="581" data-align="center">
+<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027305-67593820-750d-4ca9-9697-04542ca15429.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzA1LTY3NTkzODIwLTc1MGQtNGNhOS05Njk3LTA0NTQyY2ExNTQyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03NmNmZTczOGU1MDAyOTQ4YTVjMjhmZmRiNmRmOGMzYjA5M2JiMzRjNWFlYzg2ODVkYTFkZDMzNzRmMzAwZDM2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.gHjJna83gN_t8YdRySmGspkL6_BHHfZdqgC2112LDPg" alt="" width="581" data-align="center">
 
 Let's search up some brainfuck interpreters online , maybe running the output will get us something
 
@@ -84,17 +84,17 @@ SO we get the input by "," then we move the third cell using  ">>" and we increm
 
 and we add "+" 6 times , then we go back to the second cell and decrement 1 using "-" so it becomes 10-1=9 , and so on till the third cell becomes 0 and the second cell becomes what ?? becomes 6*10 ! we can draw a bit on our stack ( let's refer to the input by x )
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-15-02-image.png" alt="" data-align="center" width="316">
+<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027339-184fb712-7364-4ae4-bfd6-c7b0c8330b15.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzM5LTE4NGZiNzEyLTczNjQtNGFlNC1iZmQ2LWM3YjBjODMzMGIxNS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iNGExMmQ0OWMxYjE0NDExYjlhZTIyNzk2OWNiYmQwMWVlMWY5ZTNkZjU4MWIxNTZmNjZiYzk5MDhjNTI2NDVjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.mxgYA40Foqn3FmAGFPfrXeWpSrAxTeIRj3qKC6PSTU0" alt="" data-align="center" width="316">
 
 after the loop ends we go back to the first cell and enter another loop 
 
 "[-<->]" so we start decrementing from the cell that has 60 and go back to the input and decrement from it as well ! then we return to the second cell that now has 59 ..... we continue on until we have this :
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-21-41-image.png" alt="" data-align="center" width="294">
+<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027322-213b8cb3-264a-4b60-8220-f20cc7e7991c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzIyLTIxM2I4Y2IzLTI2NGEtNGI2MC04MjIwLWYyMGNjN2U3OTkxYy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yYTJkYmI0ZjU4M2Y1N2QxYTg0NDlkNmNlZmM0ODhhZjhiN2JmZTY2NmUwNDhjZmYyNjBmYjk0MTdlZTA3MzZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.syOOqKrURAwK6NtGYt3QTitEehFf9G8nvqzwCMdGMcs" alt="" data-align="center" width="294">
 
 after this loop we return to the input cell and we decrement "-" 10 times from it :
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-22-52-image.png" alt="" data-align="center" width="320">
+<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027317-4f6eed35-f171-4c27-806e-4467b88d31aa.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzE3LTRmNmVlZDM1LWYxNzEtNGMyNy04MDZlLTQ0NjdiODhkMzFhYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MmMyNmI4OTUzYjIwZjQ3YzIzMGQ4NGRlNzRkYThiMDU1MTBjN2Q3NDM2ZjcxY2Q0ZDg1YWRlNzhhNTRiNDU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.Imtblu9-w1nUVI3i0EdSISaLA71cTjdGeLYa5CMpDzY" alt="" data-align="center" width="320">
 
 until we reach this [><] and what is that !!! it literally moves to the second cell then to the first , and the only way to leave the loop is by having the value in the cell set to 0 , and boom our equation : **x-70=0 >>>>> x=70** and guess what else is 70 ? its F
 
@@ -102,7 +102,7 @@ our first character of the flag , we are in the correct path
 
 **To summarize:** 
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-12-12-29-10-image.png" alt="" width="596" data-align="center">
+<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027308-c0d694c4-5c02-4b7e-a7f8-d6c58113d7d6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzA4LWMwZDY5NGM0LTVjMDItNGI3ZS1hN2Y4LWQ2YzU4MTEzZDdkNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jOTU2NjQyY2M5YTIwMjZlNTNlM2VhZGI2NDJhNWNiYjcyZDdiMDEzMDYwZmU4MDgyMjcwMzIzM2ViMTc5YWNlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.CbBoePTchThdsjiF_VfHPeEM33y7pncYTnut4cqN1io" alt="" width="596" data-align="center">
 
 Now you can crack this using a pen and paper or a python script xD , here is my python script (includes the conversions !):
 
@@ -174,11 +174,5 @@ And here goes the flag :D
 ```
 FL1TZ{I_Luv_Th1s_l4ngu4g3}
 ```
-
----
-
-I wanna also include this writeup of Fries who solved the challenge like a pro :
-
-[oid_by_fries](path/to/yourfile.pdf)
 
 ---
