@@ -16,7 +16,7 @@
 
 Again , our usual bestfriend number 1
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-20-10-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-20-10-image.png)
 
 Running our second bestfriend strings won't get us anything leading except for a suspicious conversation between two people (FINN AND JAKE) 
 
@@ -24,7 +24,7 @@ Running our second bestfriend strings won't get us anything leading except for a
 
 Let's try to run it 
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-21-09-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-21-09-image.png)
 
 Oh dang i don't have permission , time to give up  :/ 
 
@@ -34,7 +34,7 @@ A quick google research will tell us plenty about permission (or any ai chat as 
 
 So we have to get the execute permission and that's done by **chmod +x xoring**
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-27-17-image.png" alt="" width="508" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-27-17-image.png" alt="" width="508" data-align="center">
 
 As Finn said here , none of these keys worked !
 
@@ -46,23 +46,23 @@ Lets try to decompile our binary, this time i am gonna use [IDA](https://hex-ray
 
 We look inside the main function's pseudo code and we find this :
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-37-17-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-37-17-image.png)
 
 The interesting part is this :
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-36-25-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-36-25-image.png)
 
 Therefore we can confirm that our encrypted flag (**PH^nI~cnxBnPbb^RpEXgT**) is passed to the **hard_xor** function alongside the fake keys and our input which is **s1**
 
 Our goal as i stated before is to find the real key , we can only do that by inderstanding what hard_xor is actually doing to our encrypted flag .
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-40-02-image.png" alt="" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-40-02-image.png" alt="" data-align="center">
 
                 this looks hard :( 
 
             lets change variable names so it becomes easier to read
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-41-35-image.png" alt="" width="545" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-41-35-image.png" alt="" width="545" data-align="center">
 
  WAAY BETTER , 
 
@@ -72,7 +72,7 @@ how can we get b which is our key ??? we can only get it if we know that ***XOR 
 
 I used [CyberChef]([CyberChef](https://gchq.github.io/CyberChef/)) to get our key !
 
-<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-47-39-image.png" alt="" width="546" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-47-39-image.png" alt="" width="546" data-align="center">
 
 But is that really our key ???? NO if we go back to our **hard_xor** we see that 
 
@@ -82,7 +82,7 @@ We can also assume that the key should  be composed of the same character as it 
 
 we try to xor our encrypted flag with **1** or **1111111**
 
-![](https://raw.githubusercontent.com/Blackkader/private_images/main/2025-02-11-22-52-26-image.png)
+![](https://raw.githubusercontent.com/Blackkader/private_images/blob/main/2025-02-11-22-52-26-image.png)
 
 And as the description said : flag format : FL1TZ{} , this is our flag :
 
