@@ -176,3 +176,6 @@ FL1TZ{I_Luv_Th1s_l4ngu4g3}
 ```
 
 ---
+I also wanna include this writeup of Fries who solver the challenge like a pro : 
+[oid_by_Fries](https://github.com/Fr1es5/FL1TZ-ctf-rev-writeups/tree/main/oid)
+---
