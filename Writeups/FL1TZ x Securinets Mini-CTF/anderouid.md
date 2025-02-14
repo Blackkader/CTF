@@ -281,12 +281,8 @@ FL1TZ{Gl0ub_gra33_ft0ur_Sbe7}
 ```
 
 ---
-
-I wanna link other writeups of this challenge  :
-
+I also wanna include this writeup of El-Mehdi-Dridi who solved the challenge like a pro : 
 [anderouid_by_El-Mehdi-Dridi](https://github.com/El-Mehdi-Dridi/Mobile-CTF-Tasks/blob/main/FL1TZ/FL1TZ%20writeup.md)
-
-
 ---
 
 
