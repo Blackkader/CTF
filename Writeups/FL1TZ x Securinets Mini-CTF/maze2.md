@@ -215,5 +215,5 @@ FL1TZ{s0rry_f0r_M4k1nG_U_GO_thRoUGH_DAT_M4z3}
 
 ---
 I also wanna include this writeup of Fries who solver the challenge like a pro : 
-[oid_by_Fries](https://github.com/Fr1es5/FL1TZ-ctf-rev-writeups/tree/main/oid)
+[oid_by_Fries](https://github.com/Fr1es5/FL1TZ-ctf-rev-writeups/tree/main/Maze2)
 ---
