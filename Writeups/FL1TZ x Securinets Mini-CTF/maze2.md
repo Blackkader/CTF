@@ -34,7 +34,7 @@ It's time to put him to rest again
 
 When we connect to the instance , we can see we have to input some key 
 
-<img src="https://private-user-images.githubusercontent.com/144800528/413027341-83f24065-309a-41f9-b248-4e1672babc22.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzQxOTAsIm5iZiI6MTczOTQ3Mzg5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzQxLTgzZjI0MDY1LTMwOWEtNDFmOS1iMjQ4LTRlMTY3MmJhYmMyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTExMzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xZGIyZTE3ZDZjNzg4MjcyMTE2ZGM2MThjN2FlNzRmNTliOTdiNzBmMjM4YTE5ZTVmMWQzYTJjMzAwOWFiMmVmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.DcO3qgpdD5kmN9yD1l-6aAabC2F5iwzLOFtVkFhsfAE" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_35.png" title="" alt="" data-align="center">
 
 nothing happens, let's inspect our maze2.c file : (_I'll only put the main function_)
 

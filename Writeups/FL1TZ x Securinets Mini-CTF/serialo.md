@@ -16,7 +16,7 @@
 
 Ok we have a .tar file **(an archive)** , let's extract it using the tar command
 
-![](https://private-user-images.githubusercontent.com/144800528/413027344-e0d9948c-fec1-4ccb-8b84-2f1bb3639a24.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzM2OTAsIm5iZiI6MTczOTQ3MzM5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzQ0LWUwZDk5NDhjLWZlYzEtNGNjYi04Yjg0LTJmMWJiMzYzOWEyNC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTAzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1mMTNmNGE1OTc1NjcxY2E5ZDJhOTUyZmY5MDViMTE2YmU4ZDcxNzNiOTVkMWU1NGEzODVmNzU4MmIxZWM1ZThlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.d8ZEdHI5SYI_o3arT4BxWjUHKGD6iKUoiATItV_avsQ)
+![](https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_18.png)
 
 Oh the challenge is corrupted , it's not our problem , it's the author's fault 
 
@@ -24,11 +24,11 @@ IS ITTTT ???
 
 Didn't i tell you that we have two bestfriends ??? one of them is the key for revealing the secret behind this file and that one bestfriend is **file**
 
-![](https://private-user-images.githubusercontent.com/144800528/413027309-2ebbf35e-b5dc-4430-b9e6-3bd08ceaaf3d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzM2OTAsIm5iZiI6MTczOTQ3MzM5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzA5LTJlYmJmMzVlLWI1ZGMtNDQzMC1iOWU2LTNiZDA4Y2VhYWYzZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTAzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMDQwYzFjNTExOGZmNDcwMzViZTIzN2NmZDE2N2Y2Y2E5MjJmNTc1ZWQ5YmVjZjI5ZjMwODQ0ZDMwNTQwYzU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.mHtRjV6yug_BvNQ5Ep_RQJeCxPr8WHdQGOi8gc54vAI)
+![](https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_19.png)
 
 ohh it's an executable , the author is just playing games with us , lets add the execution permission and try to run it 
 
-<img title="" src="https://private-user-images.githubusercontent.com/144800528/413027361-eae3bc77-779f-4d95-a011-ec176826b0b3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzM2OTAsIm5iZiI6MTczOTQ3MzM5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzYxLWVhZTNiYzc3LTc3OWYtNGQ5NS1hMDExLWVjMTc2ODI2YjBiMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTAzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT02NDBjYWRmYjFiYjMwZDY2YTVhOTczOTkxMDlhMDYwNDZiOGJkY2RlMjFiZTRjZGEwMzM0MDBiNTk1NzU0NzRhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.qr7tSHIg0a-fyQg0KtHDmYcg8aY-JQr5LlKIRly2Mpw" alt="" width="489" data-align="center">
+<img title="" src="https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_20.png" alt="" width="489" data-align="center">
 
 Hmmm , a name and a serial , in the **description** it is asking us to find the name for this serial **566C01447A4B47144473486F204E034F70012343754F505C435D**
 
@@ -147,7 +147,7 @@ And when you get to the ida view , u look for the xor and set a breakpoint there
 
 Time to run our program and inspect the value of ecx ( which is our key[i-1])
 
-<img src="https://private-user-images.githubusercontent.com/144800528/413027350-f63f9ea0-87fe-4543-adc1-d32c310d6ab7.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3Mzk0NzM2OTAsIm5iZiI6MTczOTQ3MzM5MCwicGF0aCI6Ii8xNDQ4MDA1MjgvNDEzMDI3MzUwLWY2M2Y5ZWEwLTg3ZmUtNDU0My1hZGMxLWQzMmMzMTBkNmFiNy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMjEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDIxM1QxOTAzMTBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wYjEwNmFiNDU1NWFiNzY5ZTRjMWVkNjcxZjY0ZWY4ZGRmMThkYjQ5ZTZkMDlmNTI5MTgyM2MyMzg5N2YxODY3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.V9_0pt3Ojzl-N7XFwl7G0-y8ZhMeW3fHYXvc2rd6XIs" title="" alt="" data-align="center">
+<img src="https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_21.png" title="" alt="" data-align="center">
 
 boom ! **ecx=0x10=16**
 
