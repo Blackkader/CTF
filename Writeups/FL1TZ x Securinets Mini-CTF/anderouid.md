@@ -42,7 +42,7 @@ And as we can see , it is asking for a password , let's input something random :
 
 <img title="" src="https://raw.githubusercontent.com/Blackkader/CTF/main/Ressources/image_56.png" alt="" width="237" data-align="center">
 
-Time to dig through the code !! , and for that we are going to decompile our android app using [jadx]([GitHub - skylot/jadx: Dex to Java decompiler](https://github.com/skylot/jadx))
+Time to dig through the code !! , and for that we are going to decompile our android app using [jadx](https://github.com/skylot/jadx)
 
 And head over to **AndroidManifest.xml**
 
