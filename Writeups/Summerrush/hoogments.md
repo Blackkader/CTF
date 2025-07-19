@@ -184,7 +184,7 @@ First , to confirm our assumption about the **init_array** segmetn , let's check
 
 **BINGOO !!**
 
-This **whattt** is calling a suspucions function (which i will name it to **magic**) , that is calling the functions we just found in **main** ??? 
+This **whattt** is calling a sus function (which i will name it to **magic**) , that is calling the functions we just found in **main** ??? 
 ```C
 unsigned __int64 __fastcall magic(__int64 func1, int func2)
 {
