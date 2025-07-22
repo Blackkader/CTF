@@ -242,7 +242,7 @@ Oh it's the debugger detector , we can patch the JMP to ignore it but if we see 
 
 ![error](../../Ressources/image_75.png)
 
-it's gonna be pain ! so we can just patch the funtion to NOPs !
+it's gonna be pain ! so we can just patch the function to NOPs !
 
 We procceed now with this : 
 ```C
