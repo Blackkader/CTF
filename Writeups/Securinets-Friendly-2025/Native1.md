@@ -11,7 +11,7 @@
 ### Solution
 
 As the task name hints , this challenge is about **Nativelibs** .
-On Android, native libraries are basically chunks of code written in C or C++ that your app can carry around. Instead of only writing everything in Java or Kotlin, more ressources :
+On Android, native libraries are basically chunks of code written in C or C++ that your app can carry around. Instead of only writing everything in Java or Kotlin, more ../../Ressources :
 
 * [AndroidDocs](https://developer.android.com/studio/projects/add-native-code)
 * [YTvideo](https://www.youtube.com/watch?v=tz15UHfEYVU)
@@ -89,7 +89,7 @@ VTJWamRYSnBibVYwYzN0T05IUXhWak5mYkRGQ2MxOXNWWEpMWHpGT1gzUklNMTl6U0RSa01GYzFmUT09
 ```
 Looks like a base64 encoded flag , let's decode it(turned out double b64 xd) :
 
-![alt text](Ressources/17.png)
+![alt text](../../Ressources/17.png)
 
 
 ```

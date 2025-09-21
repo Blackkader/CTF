@@ -24,19 +24,19 @@ public void onClick(View v) {
 ```
 Hmmm something fishy here , it says **"Login successful?? NOPEEE!!!"** , so we try our creds **(od5el / thiseasy??)** and see what happens : 
 
-![alt text](Ressources/4.png)
+![alt text](../../Ressources/4.png)
 
-Yeah we saw that coming , and this makes sense from the challenge name .. , let's search in our ressources for the author's **secret**?? using jadx :
+Yeah we saw that coming , and this makes sense from the challenge name .. , let's search in our ../../Ressources for the author's **secret**?? using jadx :
 
-![alt text](Ressources/5.png)
+![alt text](../../Ressources/5.png)
 
-Oh , so the author hid the secret in the raw ressources hehh , we head there and grab the **secret** :
+Oh , so the author hid the secret in the raw ../../Ressources hehh , we head there and grab the **secret** :
 ```
 TXl3b2xjaHlubXtiMHFfWDF4X3NpT196Q2hYX2czISF9
 ```
 We can guess this is the encrypted flag , and we can also guess its base64 encoded , let's just throw this in [CyberChef](https://gchq.github.io/CyberChef/) and see what we get using **magic** :
 
-![alt text](Ressources/6.png)
+![alt text](../../Ressources/6.png)
 
 Yess it's base64 , but we got : 
 ```
@@ -44,7 +44,7 @@ Mywolchynm{b0q_X1x_siO_zChX_g3!!}
 ```
 
 And flag format is **Securinets** , hmm  S becomes M and e becomes y , that's rot6 !! we again use cyberchef's rot6 :
-![alt text](Ressources/7.png)
+![alt text](../../Ressources/7.png)
 
 And we get our flag :
 ```

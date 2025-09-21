@@ -65,7 +65,7 @@ Decrypted: GRANDMASTER!
 ```
 Now we try our creds **(logedin / GRANDMASTER!)** and we get our flag :
 
-![alt text](Ressources/10.png)
+![alt text](../../Ressources/10.png)
 
 
 ```

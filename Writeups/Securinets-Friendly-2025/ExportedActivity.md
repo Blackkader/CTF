@@ -116,7 +116,7 @@ Executing the command successfully starts the stage10 activity ! , now we only n
 ```
 Ahhh the author actually hashed the string **sha256**  ! so we simply input this and we get our flag :
 
-![alt text](Ressources/13.png)
+![alt text](../../Ressources/13.png)
 
 ```
 Securinets{U_ju5T_l34RneD_4bout_AcT1vIti3S!!}

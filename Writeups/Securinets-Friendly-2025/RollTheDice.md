@@ -12,8 +12,8 @@
 
 This is another **Dynamic Analysis** challenge , and as the name suggests , we will have to alter the return value of a certain function here , first let's launch our apk : 
 
-![alt text](Ressources/14.png) 
-![alt text](Ressources/15.png)
+![alt text](../../Ressources/14.png) 
+![alt text](../../Ressources/15.png)
 
 Oh we're rolling dices here ! and we only have once chance cause the button hides after our first try , damn it ! but what is the winning condition ? it's actually this: 
 
@@ -45,7 +45,7 @@ Java.perform(function () {
 
 ```
 Same flow as the previous one , and yepp we forced the desired values :
-![alt text](Ressources/16.png)
+![alt text](../../Ressources/16.png)
 
 if we check the logcat : 
 

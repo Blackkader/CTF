@@ -49,14 +49,14 @@ It's hasing the password with SHA-256 and then converting it to an array of ints
 
 We throw our hash (after converting it to hex) in t he website and we get the correct pass : 
 
-![alt text](Ressources/11.png)
+![alt text](../../Ressources/11.png)
 
 ```
 123456789123456789
 ```
 We try our creds **(itsnothardiswear / 123456789123456789)** and we get our flag :
 
-![alt text](Ressources/12.png)
+![alt text](../../Ressources/12.png)
 
 Seems like we used the author's favorite website heh.
 ```

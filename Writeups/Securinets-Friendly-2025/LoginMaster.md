@@ -12,11 +12,11 @@
 
 We run the apk on our emulator and turns out it is asking for creds : 
 
-![alt text](Ressources/1.png)
+![alt text](../../Ressources/1.png)
 
 We try something random and it says invalid creds: 
 
-![alt text](Ressources/2.png)
+![alt text](../../Ressources/2.png)
 
 Time for **jadx** now , we throw our apk there and head for the **MainActivity** and find our interesting check :
 ```java
@@ -28,7 +28,7 @@ Time for **jadx** now , we throw our apk there and head for the **MainActivity**
                    
 ```
 There you go , if you get the logs correct it takes the **woho.png** and xors it with the correct **password** : **MASTER!** , and you get the flag in the **xored/decrypted** png ! we try our correct logs **(login / MASTER!)** and we get our flag !
-![alt text](Ressources/3.png)
+![alt text](../../Ressources/3.png)
 
 
 ```

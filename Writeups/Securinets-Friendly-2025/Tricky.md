@@ -73,7 +73,7 @@ We simply get our flag :
 ```
 [*] decflag: inecsuretS0yOu_dN{fu!tEO1_5t3c5lH}3__p
 ```
-I meant our scrambled flag xD , now how to know the correct flag ? let's just dig deep in our ressources maybe  we find something interesting , and ofc we do : 
+I meant our scrambled flag xD , now how to know the correct flag ? let's just dig deep in our ../../Ressources maybe  we find something interesting , and ofc we do : 
 
 ```java
 <string name="CORRECTPOSITIONS_MUST_DELETE_LATER">[5, 6, 1, 2, 9, 3, 4, 7, 8, 0, 16, 11, 12, 13, 14, 19, 18, 10, 15, 17, 36, 21, 34, 26, 31, 20, 27, 28, 23, 33, 35, 25, 22, 37, 32, 24, 29, 30]</string>

@@ -33,7 +33,7 @@ AAAAAAAAAAAAAAAA
 ```
 We try our creds **(meowmeow / AAAAAAAAAAAAAAAA)** and we get this : 
 
-![alt text](Ressources/8.png)
+![alt text](../../Ressources/8.png)
 
 Ahh , now we're lost , or no ? let's just see what happens if we get our creds correctly following our code we find this interesting part :
 ```java
@@ -44,7 +44,7 @@ String error = MainActivity.decrypt("JBtDQAc6IV0gPiM5EC94cRBrJB1OMEYgBSwZKAwBdDR
 ```
 Log ? if you search up a bit  you'll find that there is something called **LogCat** in android , it's a way to log stuff in the app , but why is it logging an **error** while we are putting the correct creds ? it's just the author misleading us , let's just open our LogCat wether using cli or androidstudio , i'll go for androidstudio and search for **ERROR** AND BOOM : 
 
-![alt text](Ressources/9.png)
+![alt text](../../Ressources/9.png)
 
 
 ```

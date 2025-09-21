@@ -12,7 +12,7 @@
 
 This is the common flag-decryption challenge , we have the apk that was used to encrypt the flag , and we were handed the **output.dat** which contains the encrypted flag , we can know that by launching the apk : 
 
-![alt text](Ressources/18.png)
+![alt text](../../Ressources/18.png)
 
 Now time for the **MainActivity** :
 
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 ```
 The activity instanciates a **heavynativeflag** class , then simply encrypts the **ciphertext** then saves it in **output.dat** , but again , its a native lib used here to do the encryption , so we take our .so file out and this time it shouldn't have a static flag xd , so we throw it in ida and after that we simply search for the package name ( cause native libs are usually in the same package as the apk ) "I'll just search for securinets" and we find our **magic** function that was used to encrypt : 
 
-![alt text](Ressources/19.png)
+![alt text](../../Ressources/19.png)
 
 Let's see what the function does :
 
