@@ -1,0 +1,9 @@
+
+adb shell
+su
+am start -n io.securinets.level7/.Unsolvable \
+  -a "fully actioned" \
+  -d "https://app.securinets.io/free/palestine" \
+  --es whatisthis "awel extra" \
+  --ei number 999 \
+  --ez verificator true

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/template">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:textColor="#00FFFF"
+            android:textColorHint="#FF00FF"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:textColor="#00FFFF"
+            android:textColorHint="#FF00FF"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="Login"
+            android:textColor="#FF00FF"
+            android:background="@drawable/edittext_bg"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@null"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+</RelativeLayout>

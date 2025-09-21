@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Level11</string>
+    <string name="CORRECTPOSITIONS_MUST_DELETE_LATER">[5, 6, 1, 2, 9, 3, 4, 7, 8, 0, 16, 11, 12, 13, 14, 19, 18, 10, 15, 17, 36, 21, 34, 26, 31, 20, 27, 28, 23, 33, 35, 25, 22, 37, 32, 24, 29, 30]</string>
+</resources>

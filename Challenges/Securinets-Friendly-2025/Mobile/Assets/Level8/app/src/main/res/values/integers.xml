@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="flag1">32768</integer>
+    <integer name="flag2">67108864</integer>
+    <integer name="flag3">4194304</integer>
+    <integer name="flag4">32</integer>
+
+
+</resources>

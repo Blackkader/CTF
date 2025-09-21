@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Level8</string>
+    <string name="secret">level8isgoatedaswell</string>
+    <string name="action1">intentac1</string>
+    <string name="action2">intentac2</string>
+    <string name="action3">intentac3</string>
+    <string name="uri1">intentu1</string>
+    <string name="uri2">intentu2</string>
+
+    <string name="errormsg">acealxeOtImV+FArxWBKg2IscjaBxcBzlIPEOT7IrYonulLBUvG6f8Ad7Q9di2hNT48q/P/F1eyO5JXOKAq33zYdMUzrXeiH5nByPilQE2oWxEz0hd23dashVJOKln2v</string>
+</resources>
