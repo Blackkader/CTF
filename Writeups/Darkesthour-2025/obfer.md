@@ -889,7 +889,7 @@ def setup_state(key):
     # words 6,7,8,9 are 0
     return state
 
-def sub_62B0(key_bytes):
+def scramble(key_bytes):
     key = bytearray(key_bytes)
     for i in range(len(key)):
         key[i] = ((key[i] >> 5) ^ ((key[i] << 3) & 0xFF)) & 0xFF
@@ -935,7 +935,7 @@ q2 = 0x0F33D7FE9F608701
 q3 = 0x41289B5CB9DB728B
 base_key = bytearray()
 for qw in [q0, q1, q2, q3]: base_key.extend(struct.pack('<Q', qw))
-final_chacha_key = sub_62B0(base_key)
+final_chacha_key = scramble(base_key)
 
 ciphertext_bytes = bytes.fromhex(ciphertext_hex)
 numeric_output_bytes = chacha_decrypt(ciphertext_bytes, final_chacha_key)
