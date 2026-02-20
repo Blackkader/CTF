@@ -546,10 +546,10 @@ __int64 __fastcall aes_enc(__int64 a1, __int64 a2, __int64 a3, __int64 v58, doub
 }
 
 ```
-It internally passes the constant 192 to an allocator function, which matches the size of OpenSSL's EVP_CIPHER_CTX struct — so thats basically EVP_CIPHER_CTX_new(). this gets further confirmed by the string "crypto/evp/evp_enc.c" showing up all over the error handling paths inside the function.
+It internally passes the constant 192 to an allocator function, which matches the size of OpenSSL's EVP_CIPHER_CTX struct, so thats basically EVP_CIPHER_CTX_new(). this gets further confirmed by the string "crypto/evp/evp_enc.c" showing up all over the error handling paths inside the function.
 after that there's two loops, both capped at 16 iterations, copying bytes from a3 and a4 into two separate local buffers v26 and v25. 16 bytes for both, that's your key and IV for AES-128.
-then sub_36CD20 takes those buffers along with the EVP context and deep inside it calls sub_36CD00 with a hardcoded 1 as the last arg — in OpenSSL that 1 is the encrypt flag passed to EVP_CipherInit. and sub_696810 called just before returns the cipher object, which resolves to EVP_aes_128_cbc().
-the actual encryption happens in sub_369040 and sub_369240, which are EVP_EncryptUpdate and EVP_EncryptFinal_ex — you can tell from the error strings "EVP_EncryptUpdate" and "crypto/evp/evp_enc.c" baked right into there error paths. cleanup is done by sub_36B550 which is just EVP_CIPHER_CTX_free.
+then sub_36CD20 takes those buffers along with the EVP context and deep inside it calls sub_36CD00 with a hardcoded 1 as the last arg ,in OpenSSL that 1 is the encrypt flag passed to EVP_CipherInit. and sub_696810 called just before returns the cipher object, which resolves to EVP_aes_128_cbc().
+the actual encryption happens in sub_369040 and sub_369240, which are EVP_EncryptUpdate and EVP_EncryptFinal_ex, you can tell from the error strings "EVP_EncryptUpdate" and "crypto/evp/evp_enc.c" baked right into there error paths. cleanup is done by sub_36B550 which is just EVP_CIPHER_CTX_free.
 so yeah, sub_3614C9 is the AES-128-CBC encrypt function, wrapping the standard OpenSSL EVP api with a 16 byte key and 16 byte IV.You don't really need to do that much thanks to ai , most of them will identify it's AES-CBC encryption by the strings inside it . Now what were the paremeteres ? that transformed X as the aes-key and that 16 null bytes vector as the iv . I'll rename it aes_enc ( crap the variables were renamed , and the function parameteres , when doing dynamic analysis , won't be a problem tho)
 
 But if you breakpoint after the aes_enc call , u'll see that the result is actually a base64_encoded string , cause at the end of the aes_enc , there is a b64_encode function : **sub_360C6D**
