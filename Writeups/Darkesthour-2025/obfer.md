@@ -310,9 +310,9 @@ After that we have those funcs :
     sub_36348A(unk: v72);
     sub_364282(unk: v56, unk: v73);
 
-```C
-Again , you can win time by dynamic analysis , you just need to track your input , for the first function for example , i had v74 ="Securinets{testtest}
 ```
+Again , you can win time by dynamic analysis , you just need to track your input , for the first function for example , i had v74 ="Securinets{testtest}
+
 I breakpointed right after the first function , checked my registers(btw install the [Dereferencing Plugin](https://plugins.hex-rays.com/danigargu/dereferencing) if you have **ida pro** , it helps a hella lot in those c++ binaries) and i found this : 
 
 ```C
