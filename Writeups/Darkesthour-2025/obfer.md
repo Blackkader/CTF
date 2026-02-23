@@ -911,9 +911,9 @@ def chacha_decrypt(data, key):
 
 def decrypt_cbc(b64_data: str, key) -> bytes:
     data = base64.b64decode(b64_data)
-    iv_received = data[:16]
-    ct          = data[16:]
-    cipher = AES.new(key, AES.MODE_CBC, iv_received)
+    iv = b"\x00" * 16
+    ct = data[16:]
+    cipher = AES.new(key, AES.MODE_CBC, iv)
     return unpad(cipher.decrypt(ct), AES.block_size)
 
 def fix_b64(s: str) -> str:
