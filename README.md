@@ -40,10 +40,4 @@ CTFS/
 
 ---
 
-## Warning !
-
-This project is open-source and licensed under the [MIT License](https://chat.deepseek.com/a/chat/s/LICENSE), so feel free to use, modify, and share the code as you see fit. That said, some of the materials in the `Writeups` folder—like challenge binaries or source code—come from third-party sources and aren’t covered by this license. If you’re unsure, check out the [LICENSE](https://chat.deepseek.com/a/chat/s/LICENSE) file for more details. Thanks for understanding!
-
----
-
 **Enjoy digging through the repo !**
